@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Comandos de Terminal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Menu de Comandos de Terminal</h1>
+        <p class="description">Clique em uma categoria no menu à esquerda para visualizar os comandos disponíveis. Esta interface demonstra a organização dos comandos em grupos logicamente semelhantes.</p>
+    </header>
+    
+    <div class="menu-type">Estrutura em Árvore (Hierárquica)</div>
+    
+    <div class="container">
+
+        <div class="menu">
+            <div class="menu-header">Menu Principal</div>
+            <ul class="menu-list">
+                <li class="menu-item active" data-category="navigation">
+                    <span>1. Navegação e Visualização</span>
+                    <span class="seta">▶</span>
+                </li>
+                <li class="menu-item" data-category="files">
+                    <span>2. Manipulação de Arquivos</span>
+                    <span class="seta">▶</span>
+                </li>
+                <li class="menu-item" data-category="git">
+                    <span>3. Controle de Versão</span>
+                    <span class="seta">▶</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="submenu active">
+            <div class="submenu-header">Navegação e Visualização</div>
+            <ul class="submenu-list" id="submenu-content">
+                <li class="submenu-item">
+                    <span class="comando">cd</span>
+                    <span class="command-description">Muda o diretório (pasta) atual. Exemplo: cd documentos entra na pasta "documentos".</span>
+                </li>
+                <li class="submenu-item">
+                    <span class="comando">ls</span>
+                    <span class="command-description">Lista os arquivos e diretórios no diretório atual. Use ls -la para ver todos os arquivos incluindo ocultos.</span>
+                </li>
+                <li class="submenu-item">
+                    <span class="comando">clear</span>
+                    <span class="command-description">Limpa a tela do terminal, removendo todo o texto anterior e deixando apenas o prompt de comando.</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
