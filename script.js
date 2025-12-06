@@ -9,38 +9,56 @@ document.addEventListener('DOMContentLoaded', function() {
                             description: "Muda o diretório atual de trabalho. Exemplo: <code>cd documentos</code> entra na pasta 'documentos'."
                         },
                         {
-                            name: "ls",
-                            description: "Lista os arquivos e diretórios no diretório atual. Use <code>ls -la</code> para ver todos os arquivos incluindo ocultos."
+                            name: "exit",
+                            description: "Sai do programa CMD"
                         },
                         {
-                            name: "clear",
-                            description: "Limpa a tela do terminal, removendo todo o texto anterior e deixando apenas o prompt de comando."
+                            name: "tree",
+                            description: "Exibe graficamente a estrutura de diretórios de uma unidade ou caminho. Exemplo: executar 'cd downloads' e depois executar 'tree' mostraria a estrutura do diretório 'downloads' "                        
+                        },
+                        {
+                            name: "cls",
+                            description: "Limpa a tela do CMD"
+                        },
+                        {
+                            name: "dir",
+                            description: "Exibe uma lista de arquivos e subdiretórios em um diretório."
                         }
+
                     ]
                 },
                 files: {
                     title: "Manipulação de Arquivos",
                     commands: [
                         {
-                            name: "mkdir",
-                            description: "Cria um novo diretório. Exemplo: <code>mkdir projeto</code> cria uma pasta chamada 'projeto'."
+                            name: "md, mkdir",
+                            description: "Ambos criam novos diretórios. Exemplo: <code>mkdir projeto</code> cria uma pasta chamada 'projeto'."
                         },
                         {
-                            name: "rm",
-                            description: "Remove arquivos ou diretórios. Use com cuidado! <code>rm -r pasta</code> remove uma pasta e todo seu conteúdo."
+                            name: "rd, rmdir",
+                            description: "Ambos removem diretórios."
+                        },
+                        {
+                            name: "del, erase",
+                            description: "Ambos excluem um ou mais arquivos "
                         },
                         {
                             name: "cp",
                             description: "Copia arquivos ou diretórios. Exemplo: <code>cp arquivo.txt backup/</code> copia o arquivo para a pasta backup."
                         },
                         {
-                            name: "mv",
-                            description: "Move ou renomeia arquivos e diretórios. Exemplo: <code>mv antigo.txt novo.txt</code> renomeia o arquivo."
-                        }
+                            name: "move",
+                            description: "Move arquivos e diretórios."
+                        },
+                        {
+                            name: "ren, rename",
+                            description: "Ambos renomeiam arquivos"
+                        },
+
                     ]
                 },
                 git: {
-                    title: "Controle de Versão (Git)",
+                    title: "Controle de Versão",
                     commands: [
                         {
                             name: "git clone",
@@ -53,7 +71,16 @@ document.addEventListener('DOMContentLoaded', function() {
                         {
                             name: "git push",
                             description: "Envia os commits do repositório local para um repositório remoto. Exemplo: <code>git push origin main</code>."
-                        }
+                        },
+                        {
+                            name: "fetch",
+                            description: "Baixa objetos e referências de outro repositório"
+                        },
+                        {
+                            name: "pull",
+                            description: "Busca e integra com outro repositório ou um branch local"
+                        },
+
                     ]
                 }
             };
